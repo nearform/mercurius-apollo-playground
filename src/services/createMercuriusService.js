@@ -11,7 +11,9 @@ const createMercuriusService = async (port, schema, resolvers) => {
     graphiql: true,
     jit: 1
   })
-  await service.listen({ port })
+  const sss = await service.listen({ port })
+
+  console.log(`🚀 Subgraph ready at: http://localhost:${port}/graphiql`)
 
   return service
 }

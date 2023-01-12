@@ -21,7 +21,7 @@ export function buildApolloGateway() {
     listen: async ({ port }) => {
       // Note the top-level `await`!
       const { url } = await startStandaloneServer(server, { port })
-      console.log(`🚀  Server ready at ${url}`)
+      console.log(`🚀 Graphql gateway ready at ${url}`)
     }
   }
 }

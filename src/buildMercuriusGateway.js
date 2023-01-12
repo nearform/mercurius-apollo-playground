@@ -27,5 +27,14 @@ export function buildMercuriusGateway() {
     }
   })
 
+  return {
+    listen: async ({ port }) => {
+      await gateway.listen({ port })
+      console.log(
+        `🚀 Graphql gateway ready at http://localhost:${port}/graphql`
+      )
+    }
+  }
+
   return gateway
 }

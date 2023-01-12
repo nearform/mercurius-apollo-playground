@@ -22,7 +22,7 @@ const createApolloService = async (port, typeDefs, resolvers) => {
     listen: { port }
   })
 
-  console.log(`🚀  Server ready at: ${url}`)
+  console.log(`🚀 Subgraph ready at: ${url}`)
 }
 
 export { createApolloService }

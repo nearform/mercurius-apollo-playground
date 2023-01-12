@@ -50,6 +50,10 @@ Apollo route is currently installed installed locally brutally (`npm run install
 
 All infra managed by Apollo (just for the sake of completeness)
 
+### 05 - Mercurius gateway with Apollo sub graphs [👉 📂](./src/05-mercurius-gateway-with-apollo-services)
+
+Federate Apollo sub graphs with a Mercurius gateway.
+
 ## Extra info
 
 Debug GQL request:
