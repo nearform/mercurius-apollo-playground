@@ -14,6 +14,11 @@ Examples taken from [The GraphQL workshop](https://github.com/nearform/the-graph
 
 ## Available setups
 
+Each setup exposes:
+
+- 2 sub graphs servers at: `http://localhost:4001/graphql` and `http://localhost:4002/graphql`
+- 1 federated server at: `http://localhost:4000`
+
 ### 00 - Mercurius gateway + Mercurius sub graphs [👉 📂](./src/00-mercurius-gateway-with-mercurius-services)
 
 All infra managed by Mercurius.
@@ -30,3 +35,24 @@ The supergraph is created with [`@apollo/rover`](https://www.apollographql.com/d
 
 - Running locally mercurius sub graphs (`01-apollo-gateway-with-mercurius-services`)
 - Run `@apollo/rover` against them (`rover` if configured with `src/services/rover-config.yaml`) with `npm run generate:supergraph`
+
+https://www.apollographql.com/docs/federation/building-supergraphs/supported-subgraphs/#javascript--typescript
+
+### 03 - Apollo router + Mercurius sub graphs [👉 📂](./src/03-apollo-router-with-mercurius-services)
+
+Federate Mercurius sub graphs with [Apollo router](https://www.apollographql.com/docs/router/) using a pre-generated supergraph.
+
+Mercurius seems to [be officially supported](https://www.apollographql.com/docs/federation/building-supergraphs/supported-subgraphs/#javascript--typescript).
+
+Apollo route is currently installed installed locally brutally (`npm run install:apollo-router`): we might consider dokerize it :)
+
+## Extra info
+
+Debug GQL request:
+
+```
+curl --request POST \
+  --header 'content-type: application/json' \
+  --url http://localhost:4000/ \
+  --data '{"query":"query { me { posts { title } } }"}'
+```

@@ -1,0 +1,7 @@
+{
+  "name": "03-apollo-router-with-mercurius-services",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js & ../../router --config ./router.yml --supergraph ../services/supergraph.graphql"
+  }
+}
