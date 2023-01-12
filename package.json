@@ -1,0 +1,27 @@
+{
+  "name": "mercurius-apollo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "src/*"
+  ],
+  "version": "1.0.0",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.2"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^2.2.3",
+    "@apollo/server": "^4.3.0",
+    "fastify": "^4.11.0",
+    "graphql": "^16.6.0",
+    "mercurius": "11.5.0",
+    "pino-pretty": "^9.1.1"
+  }
+}

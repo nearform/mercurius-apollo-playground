@@ -1,0 +1,8 @@
+{
+  "name": "apollo-mercurius-federation",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "c8 tap --no-cov"
+  }
+}
