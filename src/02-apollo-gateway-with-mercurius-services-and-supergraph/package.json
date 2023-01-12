@@ -1,5 +1,5 @@
 {
-  "name": "01-apollo-gateway-with-mercurius-services",
+  "name": "02-apollo-gateway-with-mercurius-services-and-supergraph",
   "type": "module",
   "scripts": {
     "start": "node server.js"

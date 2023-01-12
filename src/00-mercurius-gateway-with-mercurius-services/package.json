@@ -1,5 +1,5 @@
 {
-  "name": "0-mercurius-gateway-with-mercurius-services",
+  "name": "00-mercurius-gateway-with-mercurius-services",
   "type": "module",
   "scripts": {
     "start": "node server.js"
