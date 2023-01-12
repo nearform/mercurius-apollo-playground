@@ -46,6 +46,10 @@ Mercurius seems to [be officially supported](https://www.apollographql.com/docs/
 
 Apollo route is currently installed installed locally brutally (`npm run install:apollo-router`): we might consider dokerize it :)
 
+### 04 - Apollo gateway with Apollo sub graphs [👉 📂](./src/04-apollo-gateway-with-apollo-services)
+
+All infra managed by Apollo (just for the sake of completeness)
+
 ## Extra info
 
 Debug GQL request:

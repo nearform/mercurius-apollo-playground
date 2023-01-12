@@ -23,8 +23,10 @@
   "dependencies": {
     "@apollo/gateway": "^2.2.3",
     "@apollo/server": "^4.3.0",
+    "@apollo/subgraph": "^2.2.3",
     "fastify": "^4.11.0",
     "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
     "mercurius": "11.5.0",
     "pino-pretty": "^9.1.1"
   }
