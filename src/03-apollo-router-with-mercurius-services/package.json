@@ -2,6 +2,8 @@
   "name": "03-apollo-router-with-mercurius-services",
   "type": "module",
   "scripts": {
-    "start": "node server.js & ../../router --config ./router.yml --supergraph ../services/supergraph.graphql"
+    "start:subgraphs": "node server.js",
+    "start:gateway": "../../router --config ./router.yml --supergraph ../services/supergraph.graphql",
+    "start": "npm-run-all --parallel start:subgraphs start:gateway"
   }
 }
