@@ -2,8 +2,8 @@
 
 Benachmarks were performed manually with `autocannon`:
 
--1 Start the setup to benchmark
--2 execute `test:benchmark` npm script in another tab
+1. start the setup to benchmark
+2. execute `test:benchmark` npm script in another tab
 
 Test results are 100% to be reviewed. DO NOT assume anything about performance from data below.
 
