@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@apollo/gateway": "^2.2.3",
-    "@apollo/server": "^4.3.0",
+    "@apollo/server": "^4.3.2",
     "@apollo/subgraph": "^2.2.3",
     "fastify": "^4.11.0",
     "graphql": "^16.6.0",
