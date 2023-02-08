@@ -15,7 +15,7 @@
     "test:benchmark": "node ./benchmark-test.js"
   },
   "devDependencies": {
-    "@apollo/rover": "^0.10.0",
+    "@apollo/rover": "^0.11.1",
     "autocannon": "^7.10.0",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
