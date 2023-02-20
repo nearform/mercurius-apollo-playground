@@ -4,9 +4,11 @@ import mercurius from 'mercurius'
 export function buildMercuriusGateway() {
   const gateway = Fastify({
     logger: {
+      level: 'fatal',
       transport: {
         target: 'pino-pretty'
-      }
+      },
+      disableRequestLogging: true
     }
   })
 

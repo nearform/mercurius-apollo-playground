@@ -1,15 +1,44 @@
 const users = {
   u1: {
     id: 'u1',
-    name: 'John'
+    name: 'John',
+    addresses: ['a1', 'a4']
   },
   u2: {
     id: 'u2',
-    name: 'Jane'
+    name: 'Jane',
+    addresses: ['a2']
   },
   u3: {
     id: 'u3',
-    name: 'Jack'
+    name: 'Jack',
+    addresses: ['a3']
+  }
+}
+
+const addresses = {
+  a1: {
+    id: 'a1',
+    street: 'First Ave',
+    zip: '12345',
+    city: 'New york'
+  },
+  a2: {
+    id: 'a2',
+    street: 'Second Ave',
+    zip: '12345',
+    city: 'New york'
+  },  a3: {
+    id: 'a3',
+    street: 'Third Ave',
+    zip: '12345',
+    city: 'New york'
+  },
+  a4: {
+    id: 'a4',
+    street: 'Forth Ave',
+    zip: '12345',
+    city: 'New york'
   }
 }
 
@@ -40,4 +69,4 @@ const posts = {
   }
 }
 
-export { users, posts }
+export { users, posts, addresses }

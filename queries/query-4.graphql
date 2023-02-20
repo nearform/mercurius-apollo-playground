@@ -1,0 +1,21 @@
+query {
+  users {
+    id
+    name
+    addresses {
+      id
+      street
+      city
+      zip
+    }
+    posts {
+      title
+      author {
+        addresses {
+          city
+          zip
+        }
+      }
+    }
+  }
+}

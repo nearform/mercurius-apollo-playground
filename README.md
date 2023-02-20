@@ -69,6 +69,8 @@ curl --request POST \
 
 See dedicated [benchmarks docs](./docs/BENCHMARK.md/).
 
+Check a complete report [benchmarks report docs](./docs/REPORTS.md/).
+
 ## Todo
 
 - Extend sub graph schemas to represent more complex entities
