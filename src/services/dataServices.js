@@ -28,7 +28,8 @@ const addresses = {
     street: 'Second Ave',
     zip: '12345',
     city: 'New york'
-  },  a3: {
+  },
+  a3: {
     id: 'a3',
     street: 'Third Ave',
     zip: '12345',
@@ -69,4 +70,40 @@ const posts = {
   }
 }
 
-export { users, posts, addresses }
+function getLoggedUser() {
+  return users.u1
+}
+
+function getUsers() {
+  return Object.values(users)
+}
+
+function getUserById(userId) {
+  return users[userId]
+}
+
+function getAddresses(user) {
+  return user.addresses.map(a => addresses[a])
+}
+
+function getAddressById(addressId) {
+  return addresses[addressId]
+}
+
+function getPostsByUserId(userId) {
+  return Object.values(posts).filter(p => p.authorId === userId)
+}
+
+function getPosts() {
+  return Object.values(posts)
+}
+
+export {
+  getUserById,
+  getLoggedUser,
+  getUsers,
+  getAddresses,
+  getAddressById,
+  getPostsByUserId,
+  getPosts
+}

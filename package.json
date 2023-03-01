@@ -9,7 +9,7 @@
   "license": "CC-BY-SA-4.0",
   "scripts": {
     "lint": "eslint .",
-    "generate:supergraph": "rover supergraph compose --config ./src/services/rover-config.yaml > ./src/services/supergraph.graphql",
+    "generate:supergraph": "APOLLO_ELV2_LICENSE=accept rover supergraph compose --config ./src/services/rover-config.yaml > ./src/services/supergraph.graphql",
     "install:apollo-router": "curl -sSL https://router.apollo.dev/download/nix/latest | sh",
     "prepare": "npm run install:apollo-router",
     "test:benchmark": "node ./benchmark-test.js",

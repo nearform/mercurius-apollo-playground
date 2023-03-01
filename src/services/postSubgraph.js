@@ -1,7 +1,11 @@
-import { posts } from './data.js'
+import { getPostsByUserId, getPosts } from './dataServices.js'
 
-const service2 = {
+const postSubgraph = {
   schema: `
+  extend type Query {
+    posts: [Post]
+  }
+  
   type Post @key(fields: "id") {
     id: ID!
     title: String
@@ -16,6 +20,12 @@ const service2 = {
   }
 `,
   resolvers: {
+    Query: {
+      posts: (parent, args, context) => {
+        // Get the posts from a service
+        return getPosts()
+      }
+    },
     Post: {
       author: post => {
         return {
@@ -26,10 +36,10 @@ const service2 = {
     },
     User: {
       posts: user => {
-        return Object.values(posts).filter(p => p.authorId === user.id)
+        return getPostsByUserId(user.id)
       }
     }
   }
 }
 
-export { service2 }
+export { postSubgraph }
