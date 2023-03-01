@@ -1,5 +1,5 @@
 import Fastify from 'fastify'
-import mercurius from 'mercurius'
+import mercuriusGateway from '@mercuriusjs/gateway'
 
 export function buildMercuriusGateway() {
   const gateway = Fastify({
@@ -12,7 +12,7 @@ export function buildMercuriusGateway() {
     }
   })
 
-  gateway.register(mercurius, {
+  gateway.register(mercuriusGateway, {
     graphiql: true,
     jit: 1,
     gateway: {
