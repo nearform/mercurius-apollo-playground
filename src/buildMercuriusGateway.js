@@ -1,16 +1,18 @@
 import Fastify from 'fastify'
-import mercurius from 'mercurius'
+import mercuriusGateway from '@mercuriusjs/gateway'
 
 export function buildMercuriusGateway() {
   const gateway = Fastify({
     logger: {
+      level: 'fatal',
       transport: {
         target: 'pino-pretty'
-      }
+      },
+      disableRequestLogging: true
     }
   })
 
-  gateway.register(mercurius, {
+  gateway.register(mercuriusGateway, {
     graphiql: true,
     jit: 1,
     gateway: {

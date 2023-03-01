@@ -54,6 +54,12 @@ All infra managed by Apollo (just for the sake of completeness)
 
 Federate Apollo sub graphs with a Mercurius gateway.
 
+### ✅ 06 - Apollo router with Apollo sub graphs [👉 📂](./src/06-apollo-router-with-apollo-services)
+
+Federate Apollo sub graphs with Apollo router.
+
+Apollo router is currently installed locally brutally (`npm run install:apollo-router`): we might consider dokerize it :)
+
 ## Extra info
 
 Debug GQL request:
@@ -68,6 +74,8 @@ curl --request POST \
 ## Benchmark
 
 See dedicated [benchmarks docs](./docs/BENCHMARK.md/).
+
+Check a complete report [benchmarks report docs](./docs/REPORTS.md/).
 
 ## Todo
 

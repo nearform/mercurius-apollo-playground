@@ -1,21 +1,25 @@
-import Fastify from 'fastify'
-import mercurius from 'mercurius'
+import Fastify from "fastify";
+import mercurius from "@mercuriusjs/federation";
 
 const createMercuriusService = async (port, schema, resolvers) => {
-  const service = Fastify()
+  const service = Fastify({
+    logger: {
+      level: 'fatal',
+      disableRequestLogging: true
+    }
+  });
 
   service.register(mercurius, {
     schema,
     resolvers,
-    federationMetadata: true,
-    graphiql: true,
     jit: 1
-  })
-  const sss = await service.listen({ port })
+  });
 
-  console.log(`🚀 Subgraph ready at: http://localhost:${port}/graphiql`)
+  await service.listen({ port });
 
-  return service
-}
+  console.log(`🚀 Subgraph ready at: http://localhost:${port}/graphql`);
 
-export { createMercuriusService }
+  return service;
+};
+
+export { createMercuriusService };

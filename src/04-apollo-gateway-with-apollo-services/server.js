@@ -1,11 +1,11 @@
 import { buildApolloGateway } from '../buildApolloGateway.js'
 import { createApolloService } from '../services/index.js'
-import { service1 } from '../services/service1.js'
-import { service2 } from '../services/service2.js'
+import { userSubgraph } from '../services/userSubgraph.js'
+import { postSubgraph } from '../services/postSubgraph.js'
 
 async function start() {
-  await createApolloService(4001, service1.schema, service1.resolvers)
-  await createApolloService(4002, service2.schema, service2.resolvers)
+  await createApolloService(4001, userSubgraph.schema, userSubgraph.resolvers)
+  await createApolloService(4002, postSubgraph.schema, postSubgraph.resolvers)
 
   const gateway = buildApolloGateway()
   await gateway.listen({ port: 4000 })
