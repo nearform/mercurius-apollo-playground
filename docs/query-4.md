@@ -32,45 +32,45 @@ query {
 ### Request responses (the higher the better)  
 |                                                          | 1xx | 2xx   | 3xx | 4xx | 5xx |
 | -------------------------------------------------------- | --- | ----- | --- | --- | --- |
-| 00-mercurius-gateway-with-mercurius-services             | 0   | 15530 | 0   | 0   | 0   |
-| 01-apollo-gateway-with-mercurius-services                | 0   | 5930  | 0   | 0   | 0   |
-| 02-apollo-gateway-with-mercurius-services-and-supergraph | 0   | 5790  | 0   | 0   | 0   |
-| 03-apollo-router-with-mercurius-services                 | 0   | 28053 | 0   | 0   | 0   |
-| 04-apollo-gateway-with-apollo-services                   | 0   | 3939  | 0   | 0   | 0   |
-| 05-mercurius-gateway-with-apollo-services                | 0   | 6650  | 0   | 0   | 0   |
-| 06-apollo-router-with-apollo-services                    | 0   | 9791  | 0   | 0   | 0   |
+| 00-mercurius-gateway-with-mercurius-services             | 0   | 14742 | 0   | 0   | 0   |
+| 01-apollo-gateway-with-mercurius-services                | 0   | 5821  | 0   | 0   | 0   |
+| 02-apollo-gateway-with-mercurius-services-and-supergraph | 0   | 5747  | 0   | 0   | 0   |
+| 03-apollo-router-with-mercurius-services                 | 0   | 27136 | 0   | 0   | 0   |
+| 04-apollo-gateway-with-apollo-services                   | 0   | 3700  | 0   | 0   | 0   |
+| 05-mercurius-gateway-with-apollo-services                | 0   | 6590  | 0   | 0   | 0   |
+| 06-apollo-router-with-apollo-services                    | 0   | 9657  | 0   | 0   | 0   |
 
 ### Latency (the lower the better)
 |                                                          | average | mean  | stddev | min | max | 2.5% | 50% | 97.5% | 99% |
 | -------------------------------------------------------- | ------- | ----- | ------ | --- | --- | ---- | --- | ----- | --- |
-| 00-mercurius-gateway-with-mercurius-services             | 5.99    | 5.99  | 0.79   | 5   | 19  | 5    | 6   | 8     | 8   |
-| 01-apollo-gateway-with-mercurius-services                | 16.35   | 16.35 | 2.45   | 14  | 61  | 14   | 16  | 20    | 22  |
-| 02-apollo-gateway-with-mercurius-services-and-supergraph | 16.74   | 16.74 | 2.25   | 14  | 41  | 15   | 16  | 22    | 23  |
-| 03-apollo-router-with-mercurius-services                 | 3.41    | 3.41  | 0.73   | 2   | 16  | 2    | 3   | 5     | 6   |
-| 04-apollo-gateway-with-apollo-services                   | 24.88   | 24.88 | 2.96   | 21  | 58  | 22   | 25  | 31    | 39  |
-| 05-mercurius-gateway-with-apollo-services                | 14.52   | 14.52 | 1.62   | 13  | 26  | 13   | 14  | 18    | 20  |
-| 06-apollo-router-with-apollo-services                    | 10.73   | 10.73 | 2.62   | 5   | 30  | 7    | 10  | 16    | 17  |
+| 00-mercurius-gateway-with-mercurius-services             | 6.3     | 6.3   | 0.73   | 6   | 20  | 6    | 6   | 8     | 8   |
+| 01-apollo-gateway-with-mercurius-services                | 16.66   | 16.66 | 2.43   | 14  | 38  | 15   | 16  | 22    | 24  |
+| 02-apollo-gateway-with-mercurius-services-and-supergraph | 16.88   | 16.88 | 2.25   | 14  | 42  | 15   | 16  | 21    | 22  |
+| 03-apollo-router-with-mercurius-services                 | 3.55    | 3.55  | 0.87   | 2   | 17  | 3    | 3   | 6     | 6   |
+| 04-apollo-gateway-with-apollo-services                   | 26.49   | 26.49 | 4.82   | 22  | 50  | 22   | 25  | 40    | 44  |
+| 05-mercurius-gateway-with-apollo-services                | 14.68   | 14.68 | 1.64   | 13  | 30  | 13   | 14  | 18    | 20  |
+| 06-apollo-router-with-apollo-services                    | 10.89   | 10.89 | 2.58   | 6   | 28  | 7    | 11  | 16    | 18  |
 
 ### Requests (the higher the better)
 |                                                          | average | mean    | stddev | min  | max  | 2.5% | 50%  | 97.5% | 99%  |
 | -------------------------------------------------------- | ------- | ------- | ------ | ---- | ---- | ---- | ---- | ----- | ---- |
-| 00-mercurius-gateway-with-mercurius-services             | 1553    | 1553    | 32.94  | 1507 | 1597 | 1507 | 1550 | 1597  | 1597 |
-| 01-apollo-gateway-with-mercurius-services                | 593     | 593     | 19.15  | 564  | 620  | 564  | 590  | 620   | 620  |
-| 02-apollo-gateway-with-mercurius-services-and-supergraph | 579     | 579     | 21.29  | 550  | 610  | 550  | 575  | 610   | 610  |
-| 03-apollo-router-with-mercurius-services                 | 2550.82 | 2550.82 | 95.04  | 2410 | 2689 | 2411 | 2561 | 2689  | 2689 |
-| 04-apollo-gateway-with-apollo-services                   | 393.9   | 393.9   | 9.03   | 380  | 410  | 380  | 390  | 410   | 410  |
-| 05-mercurius-gateway-with-apollo-services                | 665     | 665     | 12.24  | 640  | 682  | 640  | 668  | 682   | 682  |
-| 06-apollo-router-with-apollo-services                    | 890.1   | 890.1   | 18.59  | 861  | 929  | 861  | 889  | 929   | 929  |
+| 00-mercurius-gateway-with-mercurius-services             | 1474.2  | 1474.2  | 26.42  | 1441 | 1523 | 1441 | 1460 | 1523  | 1523 |
+| 01-apollo-gateway-with-mercurius-services                | 582.1   | 582.1   | 18.02  | 541  | 610  | 541  | 589  | 610   | 610  |
+| 02-apollo-gateway-with-mercurius-services-and-supergraph | 574.71  | 574.71  | 19.91  | 530  | 598  | 530  | 580  | 598   | 598  |
+| 03-apollo-router-with-mercurius-services                 | 2467.19 | 2467.19 | 103.83 | 2289 | 2597 | 2289 | 2501 | 2597  | 2597 |
+| 04-apollo-gateway-with-apollo-services                   | 370     | 370     | 30.32  | 290  | 397  | 290  | 380  | 397   | 397  |
+| 05-mercurius-gateway-with-apollo-services                | 659     | 659     | 15.78  | 640  | 680  | 640  | 660  | 680   | 680  |
+| 06-apollo-router-with-apollo-services                    | 877.91  | 877.91  | 21.15  | 846  | 905  | 846  | 875  | 905   | 905  |
 
 ### Throughput (the higher the better)
 |                                                          | average    | mean       | stddev   | min     | max     | 2.5%    | 50%     | 97.5%   | 99%     |
 | -------------------------------------------------------- | ---------- | ---------- | -------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| 00-mercurius-gateway-with-mercurius-services             | 1528217.6  | 1528217.6  | 32188.32 | 1482888 | 1571448 | 1483775 | 1525759 | 1571839 | 1571839 |
-| 01-apollo-gateway-with-mercurius-services                | 656486.4   | 656486.4   | 21155.02 | 624348  | 686340  | 624639  | 653311  | 686591  | 686591  |
-| 02-apollo-gateway-with-mercurius-services-and-supergraph | 640972.81  | 640972.81  | 23435.07 | 608850  | 675270  | 609279  | 636927  | 675327  | 675327  |
-| 03-apollo-router-with-mercurius-services                 | 2384709.82 | 2384709.82 | 88693.71 | 2253350 | 2514215 | 2254847 | 2396159 | 2514943 | 2514943 |
-| 04-apollo-gateway-with-apollo-services                   | 436070.4   | 436070.4   | 9982.33  | 420660  | 453870  | 420863  | 431871  | 453887  | 453887  |
-| 05-mercurius-gateway-with-apollo-services                | 654336     | 654336     | 11918.17 | 629760  | 671088  | 630271  | 657407  | 671231  | 671231  |
-| 06-apollo-router-with-apollo-services                    | 832302.55  | 832302.55  | 17352.41 | 805035  | 868615  | 805375  | 831487  | 868863  | 868863  |
+| 00-mercurius-gateway-with-mercurius-services             | 1450598.4  | 1450598.4  | 26020.29 | 1417944 | 1498632 | 1418239 | 1436671 | 1499135 | 1499135 |
+| 01-apollo-gateway-with-mercurius-services                | 644300.81  | 644300.81  | 19942.32 | 598887  | 675270  | 599039  | 652287  | 675327  | 675327  |
+| 02-apollo-gateway-with-mercurius-services-and-supergraph | 636262.4   | 636262.4   | 22053.84 | 586710  | 661986  | 586751  | 642559  | 662015  | 662015  |
+| 03-apollo-router-with-mercurius-services                 | 2306513.46 | 2306513.46 | 96890.07 | 2140215 | 2428195 | 2142207 | 2338815 | 2428927 | 2428927 |
+| 04-apollo-gateway-with-apollo-services                   | 409600     | 409600     | 33526.48 | 321030  | 439479  | 321279  | 420863  | 439551  | 439551  |
+| 05-mercurius-gateway-with-apollo-services                | 648499.2   | 648499.2   | 15350.53 | 629760  | 669120  | 630271  | 649727  | 669183  | 669183  |
+| 06-apollo-router-with-apollo-services                    | 820759.28  | 820759.28  | 19775.96 | 791010  | 846175  | 791039  | 818175  | 846335  | 846335  |
     
     
