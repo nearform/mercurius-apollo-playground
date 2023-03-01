@@ -1,11 +1,28 @@
 # Benchmark
 
-Benachmarks were performed manually with `autocannon`:
+We can run some benchmarks on the services using autocannon.
+The action can be done manually on a specific configuration or 
+automatically on all of them.
 
-1. start the setup to benchmark
-2. execute `test:benchmark` npm script in another tab
+The benchmark tool used is `autocannon`.
 
-Test results are 100% to be reviewed. DO NOT assume anything about performance from data below.
+## Single configuration benchmark
+To run a single benchmark, we should start the specific service 
+and run the command `benchmark:single-service`
+
+In one tab:
+```shell
+cd src/00-mercurius-gateway-with-mercurius-services
+npm start
+```
+
+In another tab:
+```shell
+npm run benchmark:single-service
+```
+
+Test results are 100% to be reviewed. 
+DO NOT assume anything about performance from the data below.
 
 ### 00 - Mercurius gateway + Mercurius sub graphs
 
@@ -107,4 +124,23 @@ Test results are 100% to be reviewed. DO NOT assume anything about performance f
 ├───────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
 │ Bytes/Sec │ 526 kB │ 526 kB │ 776 kB │ 793 kB │ 742 kB │ 77 kB  │ 526 kB │
 └───────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘
+```
+
+## Complete benchmark
+We can run a complete benchmark in 2 steps: 
+the first collects the benchmark data, 
+and the second creates the reports.
+
+```shell
+npm run benchmark:complete:collect-data
+npm run benchmark:complete:create-report
+```
+
+The first command runs and benchmarks one by one the different configurations, then exports the results in the `results` folder.
+The second command uses the data created and generates the reports in the [REPORTS.md](./REPORTS.md) file.
+
+We can run the whole process with a single command.
+
+```shell
+npm run benchmark:complete
 ```

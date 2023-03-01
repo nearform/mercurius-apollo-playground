@@ -12,9 +12,10 @@
     "generate:supergraph": "APOLLO_ELV2_LICENSE=accept rover supergraph compose --config ./src/services/rover-config.yaml > ./src/services/supergraph.graphql",
     "install:apollo-router": "curl -sSL https://router.apollo.dev/download/nix/latest | sh",
     "prepare": "npm run install:apollo-router",
-    "test:benchmark": "node ./benchmark-test.js",
-    "collect-data": "node ./collect-data.js",
-    "create-report": "node ./create-report.js"
+    "benchmark:single-service": "node ./benchmark-single-service.js",
+    "benchmark:complete:collect-data": "node ./benchmark-collect-data.js",
+    "benchmark:complete:create-report": "node ./benchmark-create-report.js",
+    "benchmark:complete": "npm run benchmark:complete:collect-data && npm run benchmark:complete:create-report"
   },
   "devDependencies": {
     "@apollo/rover": "^0.10.0",
