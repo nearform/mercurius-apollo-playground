@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@apollo/gateway": "^2.3.2",
-    "@apollo/server": "^4.4.0",
+    "@apollo/server": "^4.4.1",
     "@apollo/subgraph": "^2.3.2",
     "@mercuriusjs/federation": "1.0.1",
     "@mercuriusjs/gateway": "1.2.0",
